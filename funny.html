@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Funny Camera</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="funny.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+
+    </head>
+    <body onload="startRecognition()">
+      
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+                    <button onclick="logs()"id="log" class="btn btn-danger">Logout</button>
+                </div>
+            </div>
+        </div>
+        <center>
+        <h1 id="caption">AI Funny Camera</h1>
+        
+        <h3 id="cap">Capture Your Fun here</h3>
+  
+       
+        <h3 id="h3"></h3>
+      
+        <br>
+       
+
+
+        <div id="cm" class="carousel slide" data-interval="false" >
+            <div class="carousel-inner">
+                <div class="item active">
+                <center>
+                    <img src="l.png" width="100" height="100"  class="img-responsive">
+                    </center>
+
+                </div>
+                <div class="item">
+                    <center>
+                    <img src="m.png" width="100" height="100"  class="img-responsive">
+                    </center>
+                </div>
+                <a class="left carousel-control" href="#cm" data-slide="prev" id="p">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#cm" data-slide="next" id="n">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                <ol class="carousel-indicators">
+                    <li data-target="#cm" data-slide-to="0" class="active"></li>
+                    <li data-target="#cm" data-slide-to="1"></li>
+                </ol>
+                <br>
+                
+                
+
+            
+            </div>
+        </div>
+        <footer>
+            <p>Made by <strong>Jayaditya Jaiswal</strong></p>
+        </footer>
+        </center>
+    </body>
+</html>
